@@ -1,0 +1,21 @@
+<div class="card text-blank mt-3">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>{{postdata.title}}</h2>
+        </div>
+
+        <div class="card-text">
+            {{postdata.content.substring(0,50)}}...<a class="card-link" routerLink="/view/{{post.id}}" >Read More</a>
+        </div>
+    </div>
+
+    <div class="card-footer text-muted">
+        Posted on {{postdata.created.toDate()| date:'dd/MM/yyyy'}}
+
+        <button type="button" class="btn btn-danger card-link btn-sm float-right"
+        *ngIf="userdata && userdata.uid==postdata.owner" (click)="delete()">Delete</button>
+    </div>
+
+    <a class="card-footer text-muted" *ngIf="(userdata && postdata.owner !== userdata.uid ||!userdata)" 
+    routerLink="/profile/{{postdata.owner}}">View Writer's Profile</a>
+</div>

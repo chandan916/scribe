@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "scribe-4584a"
+  },
+  "targets": {
+    "scribe-4584a": {
+      "hosting": {
+        "scribe": [
+          "scribe-4584a"
+        ]
+      }
+    }
+  }
+}
