@@ -42,9 +42,9 @@ export class EditprofileComponent implements OnInit {
       reader.readAsDataURL(event.target.files[0]);
       this.selectedImage = event.target.files[0];
      var file=event.target.files[0];
-      var bucketName = 'onlineclassbucket';
+      var bucketName = ;
   var bucketRegion = 'ap-south-1';
-  var IdentityPoolId = 'ap-south-1:c46dd70c-a272-439e-9bc6-0c2e3cb35e4e';
+  var IdentityPoolId =;
    AWS.config.update({
                   region: bucketRegion,
                   credentials: new AWS.CognitoIdentityCredentials({
