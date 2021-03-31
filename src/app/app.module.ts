@@ -21,14 +21,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
 
 var config = {
-  apiKey: "AIzaSyDuBPOea3jYf2XNKOh0bGc2vFyVFsXZy5A",
-  authDomain: "scribe-4584a.firebaseapp.com",
-  databaseURL: "https://scribe-4584a.firebaseio.com",
-  projectId: "scribe-4584a",
-  storageBucket: "scribe-4584a.appspot.com",
-  messagingSenderId: "875210761375",
-  appId: "1:875210761375:web:3aa983c76436c5f4d5aeaa",
-  measurementId: "G-FZ2VB32VKZ"
+  apiKey: ,
+  authDomain: ,
+  databaseURL: ,
+  projectId:,
+  storageBucket:,
+  messagingSenderId:,
+  appId: ,
+  measurementId: 
 };
 
 firebase.initializeApp(config);
